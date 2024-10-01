@@ -9,7 +9,7 @@ import {
   // DOGS_IMAGES,
   // FAILED_TO_FETCH,
   // INDIVIDUAL_IMAGE,
-  REF_IMAGE_ID,
+  CDN_BASE_ROUTE,
 } from './constants';
 import {
   ContentWrapper,
@@ -69,17 +69,17 @@ export const Post = ({ post }: { post: BreedsPost }) => {
   // }, []);
 
   return (
-    <PostWrapper imageUrl={`${REF_IMAGE_ID}${post.reference_image_id}.jpg`}>
+    <PostWrapper imageUrl={`${CDN_BASE_ROUTE}${post.reference_image_id}.jpg`}>
       <div
         className="dog-image"
         onClick={() => {
-          setImgSrc(`${REF_IMAGE_ID}${post.reference_image_id}.jpg`);
+          setImgSrc(`${CDN_BASE_ROUTE}${post.reference_image_id}.jpg`);
           setFullScreen(true);
         }}
       />
       {/* <Image
           className="dog-image"
-          src={`${REF_IMAGE_ID}${post.reference_image_id}.jpg`}
+          src={`${CDN_BASE_ROUTE}${post.reference_image_id}.jpg`}
           alt="dog"
           // width={390}
           // height={250}
@@ -87,7 +87,7 @@ export const Post = ({ post }: { post: BreedsPost }) => {
           objectFit="contain"
           placeholder="empty"
           onClick={() => {
-            setImgSrc(`${REF_IMAGE_ID}${post.reference_image_id}.jpg`);
+            setImgSrc(`${CDN_BASE_ROUTE}${post.reference_image_id}.jpg`);
             setFullScreen(true);
           }}
         /> */}
