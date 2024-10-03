@@ -16,7 +16,7 @@ async function fetchDogBreeds(): Promise<BreedsPost[]> {
     // const { data: imagesData } = await axios.get(
     //   `${DOGS_IMAGES}&breed_ids=${imageIdsRefs}&api_key=${API_KEY}`,
     // );
-    return data;
+    return data || [];
   } catch (error) {
     console.error(FAILED_TO_FETCH, error);
     throw new Error(FAILED_TO_FETCH);
