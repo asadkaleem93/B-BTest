@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { DOGS_BREED, FAILED_TO_FETCH } from '../components/breeds/constants';
-import { BreedsPost } from '../components/breeds/interface';
-import BreedsPage from '../components/breeds/breeds';
+import { DOGS_BREED, FAILED_TO_FETCH } from './constants';
+import { BreedsPost } from '@/components/breeds/interface';
+import BreedsPage from '@/components/breeds/breeds';
 
 async function fetchDogBreeds(): Promise<BreedsPost[]> {
   try {

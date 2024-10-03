@@ -77,20 +77,6 @@ export const Post = ({ post }: { post: BreedsPost }) => {
           setFullScreen(true);
         }}
       />
-      {/* <Image
-          className="dog-image"
-          src={`${CDN_BASE_ROUTE}${post.reference_image_id}.jpg`}
-          alt="dog"
-          // width={390}
-          // height={250}
-          layout="fill"
-          objectFit="contain"
-          placeholder="empty"
-          onClick={() => {
-            setImgSrc(`${CDN_BASE_ROUTE}${post.reference_image_id}.jpg`);
-            setFullScreen(true);
-          }}
-        /> */}
       <PostContent post={post} />
       <FullScreenModal
         open={fullScreen}
@@ -101,14 +87,6 @@ export const Post = ({ post }: { post: BreedsPost }) => {
       >
         <div className="img-modal-wrapper">
           <img src={imgSrc} alt="dog-img" style={{ height: '100vh' }} />
-          {/* <Image
-              className="xyz"
-              src={imgSrc}
-              width={undefined}
-              height={undefined}
-              alt="dog-image"
-              layout="raw"
-            /> */}
         </div>
       </FullScreenModal>
     </PostWrapper>
