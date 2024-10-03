@@ -6,12 +6,6 @@ import {
 } from 'react';
 
 import {
-  // DOGS_IMAGES,
-  // FAILED_TO_FETCH,
-  // INDIVIDUAL_IMAGE,
-  CDN_BASE_ROUTE,
-} from './constants';
-import {
   ContentWrapper,
   Heading,
   InfoField,
@@ -20,6 +14,7 @@ import {
 } from './style';
 import { FullScreenModal } from '../fullScreenModal/fullScreenModal';
 import { BreedsPost } from './interface';
+import { CDN_BASE_ROUTE } from '@/app/constants';
 // import axios from 'axios';
 // import Image from 'next/image';
 

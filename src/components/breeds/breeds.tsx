@@ -10,8 +10,8 @@ import {
   PageWrapper,
   TotalBreedsText,
 } from './style';
-import { DOGS_BREED, FAILED_TO_FETCH } from './constants';
 import axios from 'axios';
+import { DOGS_BREED, FAILED_TO_FETCH } from '@/app/constants';
 
 interface Breeds {
   posts: BreedsPost[];
