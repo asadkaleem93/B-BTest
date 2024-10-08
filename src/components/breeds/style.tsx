@@ -8,7 +8,7 @@ export const PageWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
-export const PostWrapper = styled.div<{ imageUrl: string }>`
+export const PostWrapper = styled.div<{ backgroundimage: string }>`
   display: flex;
   flex-direction: column;
   width: 390px;
@@ -19,7 +19,7 @@ export const PostWrapper = styled.div<{ imageUrl: string }>`
     border-top-left-radius: 10px;
     width: 100%;
     height: 250px;
-    background-image: url(${(props) => props.imageUrl});
+    background-image: url(${(props) => props.backgroundimage});
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;

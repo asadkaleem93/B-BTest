@@ -64,7 +64,9 @@ export const Post = ({ post }: { post: BreedsPost }) => {
   // }, []);
 
   return (
-    <PostWrapper imageUrl={`${CDN_BASE_ROUTE}${post.reference_image_id}.jpg`}>
+    <PostWrapper
+      backgroundimage={`${CDN_BASE_ROUTE}${post.reference_image_id}.jpg`}
+    >
       <div
         className="dog-image"
         onClick={() => {
